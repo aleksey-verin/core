@@ -50,7 +50,7 @@ export function CreateCourseForm({
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(handleCreate)}
-        className={cn(className, "space-y-8")}
+        className={cn(className, "space-y-4")}
       >
         <FormField
           control={form.control}
@@ -78,7 +78,7 @@ export function CreateCourseForm({
             </FormItem>
           )}
         />
-        <Button disabled={isCreateTransition}>Добавить</Button>
+        <Button className="mt-8" disabled={isCreateTransition}>Добавить</Button>
       </form>
     </Form>
   );
