@@ -13,5 +13,5 @@ datasource db {
 model Course {
   id String @id @default(cuid())
   name String
-  decription String
+  description String
 }
